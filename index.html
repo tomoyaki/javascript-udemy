@@ -3,58 +3,20 @@
   <head>
     <title>Javascript</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/styles.css" />
   </head>
 
   <body>
-    <p id="text">Hello World!</p>
-    <button id="myButton">ChangeText!</button>
-    <script type="text/javascript">
-      //ボタンがクリックされた時の処理
-      document.getElementById("myButton").onclick = function () {
-        //alert("ボタンが押されました。");
-        document.getElementById("text").innerHTML = "クリックしましたね！";
-      };
-    </script>
+    <p><input type="text" id="inputForm" />ここに名前を入力してください</p>
+    <button id="submitButton">送信する</button>
 
-    <p id="secondParagraph">Javascriptは、</p>
-    <button id="secondButton">追記する</button>
-
-    <p id="thirdParagraph">スタイルを変更してみましょう。</p>
-    <button id="changeStyle">スタイルを変更する！</button>
-
-    <div>
-      <!-- 個別属性はid、共通属性はclassで指定する -->
-      <p id="circle1" class="circle"></p>
-      <p id="circle2" class="circle"></p>
-      <p id="circle3" class="circle"></p>
-    </div>
+    <p id="newMessage"></p>
 
     <script type="text/javascript">
-      document.getElementById("secondButton").onclick = function () {
-        //文字列をappendする処理
-        document.getElementById("secondParagraph").innerHTML +=
-          "ブラウザでもサーバサイドでも動作するプログラミング言語です。";
-      };
-
-      document.getElementById("changeStyle").onclick = function () {
-        //ボタンクリックで文字列を赤に変更
-        //document.getElementById("thirdParagraph").style.color = "red";
-        //ボタンクリックで文字列のスタイルを変更
-        document.getElementById("thirdParagraph").style.display = "none";
-      };
-
-      //circle1の削除
-      document.getElementById("circle1").onclick = function () {
-        document.getElementById("circle1").style.display = "none";
-      };
-      //circle2の削除
-      document.getElementById("circle2").onclick = function () {
-        document.getElementById("circle2").style.display = "none";
-      };
-      //circle3の削除
-      document.getElementById("circle3").onclick = function () {
-        document.getElementById("circle3").style.display = "none";
+      document.getElementById("submitButton").onclick = function () {
+        var name = "";
+        name = document.getElementById("inputForm").value;
+        document.getElementById("newMessage").innerHTML =
+          name + "さん、ようこそ。";
       };
     </script>
   </body>
