@@ -1,3 +1,32 @@
 body {
   font-family: sans-serif;
 }
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  float: left;
+  margin: 20px;
+}
+
+#circle1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: skyblue; /*背景色*/
+}
+
+#circle2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: orange; /*背景色*/
+}
+
+#circle3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgb(145, 224, 26); /*背景色*/
+}
