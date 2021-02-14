@@ -15,5 +15,15 @@
         document.getElementById("text").innerHTML = "クリックしましたね！";
       };
     </script>
+
+    <p id="secondParagraph">Javascriptは、</p>
+    <button id="secondButton">追記する</button>
+    <script type="text/javascript">
+      document.getElementById("secondButton").onclick = function () {
+        //文字列をappendする処理
+        document.getElementById("secondParagraph").innerHTML +=
+          "ブラウザでもサーバサイドでも動作するプログラミング言語です。";
+      };
+    </script>
   </body>
 </html>
