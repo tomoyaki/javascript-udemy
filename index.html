@@ -7,9 +7,13 @@
 
   <body>
     <p id="text">Hello World!</p>
+    <button id="myButton">ChangeText!</button>
     <script type="text/javascript">
-      //パラグラフのコンテンツを更新する処理
-      document.getElementById("text").innerHTML = "Hello Rob!";
+      //ボタンがクリックされた時の処理
+      document.getElementById("myButton").onclick = function () {
+        //alert("ボタンが押されました。");
+        document.getElementById("text").innerHTML = "クリックしましたね！";
+      };
     </script>
   </body>
 </html>
