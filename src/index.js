@@ -1,22 +1,11 @@
-/*
-for (var i = 5; i < 5; i++) {
-  console.log(i);
+function average(a, b) {
+  return (a + b) / 2;
 }
 
-for (var i = 5; i > 0; i--) {
-  console.log(i);
-}
-*/
-var tweets = ["Morning", "Good Day", "Dinner", "Good Night", "midnight"];
-var tweetString = "";
+var x = 5;
+var y = 10;
+console.log(average(x, y));
 
-//for (var i = 0; i < tweets.length; i++) {
-var i = 0;
-while (i < tweets.length) {
-  console.log(i);
-  console.log(tweetString);
-  tweetString = tweetString + "<p>" + tweets[i] + "</p>";
-  i++;
-
-  document.getElementById("tweetDiv").innerHTML = tweetString;
-}
+var x = 8;
+var y = 12;
+console.log(average(x, y));
