@@ -18,11 +18,22 @@
 
     <p id="secondParagraph">Javascriptは、</p>
     <button id="secondButton">追記する</button>
+
+    <p id="thirdParagraph">スタイルを変更してみましょう。</p>
+    <button id="changeStyle">スタイルを変更する！</button>
+
     <script type="text/javascript">
       document.getElementById("secondButton").onclick = function () {
         //文字列をappendする処理
         document.getElementById("secondParagraph").innerHTML +=
           "ブラウザでもサーバサイドでも動作するプログラミング言語です。";
+      };
+
+      document.getElementById("changeStyle").onclick = function () {
+        //ボタンクリックで文字列を赤に変更
+        //document.getElementById("thirdParagraph").style.color = "red";
+        //ボタンクリックで文字列のスタイルを変更
+        document.getElementById("thirdParagraph").style.display = "none";
       };
     </script>
   </body>
