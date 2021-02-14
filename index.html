@@ -6,18 +6,6 @@
   </head>
 
   <body>
-    <p><input type="text" id="inputForm" />ここに名前を入力してください</p>
-    <button id="submitButton">送信する</button>
-
-    <p id="newMessage"></p>
-
-    <script type="text/javascript">
-      document.getElementById("submitButton").onclick = function () {
-        var name = "";
-        name = document.getElementById("inputForm").value;
-        document.getElementById("newMessage").innerHTML =
-          name + "さん、ようこそ。";
-      };
-    </script>
+    <script type="text/javascript" src="./src/index.js"></script>
   </body>
 </html>
